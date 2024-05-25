@@ -2,6 +2,8 @@
 
 Model Description: This model is a fine-tuned version of [FinBERT](https://huggingface.co/yiyanghkust/finbert-pretrain), a BERT model pre-trained on financial texts. The fine-tuning process was conducted to adapt the model to specific financial NLP tasks, enhancing its performance on domain-specific applications for sentiment analysis.
 
+See more detail on my Hugging Face page 🤗: https://huggingface.co/fuchenru/Trading-Hero-LLM 
+
 ## Model Use
 
 Primary Users: Financial analysts, NLP researchers, and developers working on financial data.
