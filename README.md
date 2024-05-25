@@ -41,6 +41,9 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipe
 tokenizer = AutoTokenizer.from_pretrained("fuchenru/Trading-Hero-LLM")
 model = AutoModelForSequenceClassification.from_pretrained("fuchenru/Trading-Hero-LLM")
 nlp = pipeline("text-classification", model=model, tokenizer=tokenizer)
+```
+
+```
 # Preprocess the input text
 def preprocess(text, tokenizer, max_length=128):
     inputs = tokenizer(text, truncation=True, padding='max_length', max_length=max_length, return_tensors='pt')
@@ -76,6 +79,7 @@ for i in stock_news:
     predicted_sentiment = predict_sentiment(i)
     print("Predicted Sentiment:", predicted_sentiment)
 ```
+
 ```
 Predicted Sentiment: neutral
 Predicted Sentiment: neutral
